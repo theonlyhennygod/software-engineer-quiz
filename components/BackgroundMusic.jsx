@@ -1,10 +1,8 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 import Howler from "react-howler";
 
 const BackgroundMusic = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handleMusicToggle = () => {
     setIsPlaying(!isPlaying);

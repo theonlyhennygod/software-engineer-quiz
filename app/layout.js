@@ -6,8 +6,8 @@ import ThemeToggle from "@/components/ThemeToggle";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Backend Quiz App",
-  description: "Get ready for your next backend interview with this quiz app.",
+  title: "Software Engineer Quiz App",
+  description: "Get ready for your next Software Engineer interview with this quiz app.",
 };
 
 export default function RootLayout({ children }) {
