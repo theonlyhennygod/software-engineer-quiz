@@ -24,7 +24,7 @@ const BackgroundMusic = () => {
       />
       <button
         onClick={handleMusicToggle}
-        className="mt-4 py-2 px-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition-colors"
+        className="mt-8 py-2 px-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition-colors"
       >
         {isPlaying ? "Pause Music" : "Play Music"}
       </button>
