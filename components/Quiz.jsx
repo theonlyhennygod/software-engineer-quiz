@@ -7,23 +7,18 @@ import { questions as allQuestions } from '../data/questions';
 import BackgroundMusic from '../components/BackgroundMusic';
 import Footer from '../components/Footer';
 
-const shuffleArray = (array) => {
-  let shuffledArray = array.slice();
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-};
-
 const Quiz = () => {
-  const [questions, setQuestions] = useState(shuffleArray(allQuestions));
+  const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [incorrectAnswers, setIncorrectAnswers] = useState(0);
   const [showConfetti, setShowConfetti] = useState(false);
   const [timeLeft, setTimeLeft] = useState(30);
   const scoreRef = useRef(null);
+
+  useEffect(() => {
+    setQuestions(shuffleArray(allQuestions)); // Shuffle questions on initial load
+  }, []);
 
   useEffect(() => {
     if (timeLeft === 0) {
@@ -34,6 +29,15 @@ const Quiz = () => {
     }, 1000);
     return () => clearTimeout(timer);
   }, [timeLeft]);
+
+  const shuffleArray = (array) => {
+    let shuffledArray = array.slice(); // Create a copy of the array
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+    }
+    return shuffledArray;
+  };
 
   const handleAnswer = (index) => {
     if (index === questions[currentQuestion].answer) {
@@ -82,36 +86,32 @@ const Quiz = () => {
       {showConfetti && <Confetti />}
       <BackgroundMusic />
       <div className="flex flex-col items-center justify-center w-full max-w-md p-8 bg-white dark:bg-gray-800 rounded-lg shadow-md">
-        <h2 className="text-2xl mb-4 text-center">{questions[currentQuestion].question}</h2>
-        <div className="flex flex-col space-y-4 w-full">
-          {questions[currentQuestion].options.map((option, index) => (
+        {questions.length > 0 && (
+          <>
+            <h2 className="text-2xl mb-4 text-center">{questions[currentQuestion].question}</h2>
+            <div className="flex flex-col space-y-4 w-full">
+              {questions[currentQuestion].options.map((option, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(index)}
+                  className="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+            <div ref={scoreRef} className="mt-4 text-center">
+              <p>Correct Answers: {correctAnswers}</p>
+              <p>Incorrect Answers: {incorrectAnswers}</p>
+              <p>Time left: {timeLeft} seconds</p>
+            </div>
             <button
-              key={index}
-              onClick={() => handleAnswer(index)}
-              className="py-2 px-4 bg-blue-500 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              onClick={handleResetQuiz}
+              className="mt-4 py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-700 transition-colors"
             >
-              {option}
+              Reset Quiz
             </button>
-          ))}
-        </div>
-        <div ref={scoreRef} className="mt-4 text-center">
-          <p>Correct Answers: {correctAnswers}</p>
-          <p>Incorrect Answers: {incorrectAnswers}</p>
-          <p>Time left: {timeLeft} seconds</p>
-        </div>
-        <button
-          onClick={handleResetQuiz}
-          className="mt-4 py-2 px-4 bg-green-500 text-white rounded-lg hover:bg-green-700 transition-colors"
-        >
-          Reset Quiz
-        </button>
-        {showConfetti && (
-          <button
-            onClick={handleShareScore}
-            className="mt-4 py-2 px-4 bg-yellow-500 text-white rounded-lg hover:bg-yellow-700 transition-colors"
-          >
-            Share Score
-          </button>
+          </>
         )}
       </div>
       <Footer />
