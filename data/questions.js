@@ -32,12 +32,12 @@ export const questions = [
     {
         question: "Which method is used to create a server in Node.js?",
         options: [
-            "createServer()",
             "initServer()",
             "startServer()",
+            "createServer()",
             "newServer()"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the default port number for an HTTP server in Node.js?",
@@ -82,12 +82,12 @@ export const questions = [
     {
         question: "What is Express.js?",
         options: [
-            "A web application framework for Node.js",
             "A database management system",
+            "A web application framework for Node.js",
             "A styling framework",
             "A JavaScript library for building user interfaces"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is middleware in Express.js?",
@@ -102,72 +102,72 @@ export const questions = [
     {
         question: "What does the `res.send()` method do in Express.js?",
         options: [
-            "Sends an HTTP response",
             "Reads a file from the server",
             "Logs data to the console",
-            "Redirects to another route"
+            "Redirects to another route",
+            "Sends an HTTP response",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which of the following is a templating engine that can be used with Express.js?",
         options: [
-            "EJS",
             "React",
             "Vue",
+            "EJS",
             "Angular"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is a RESTful API?",
         options: [
-            "An API that adheres to the principles of REST",
             "An API that uses SOAP protocol",
+            "An API that adheres to the principles of REST",
             "An API used only for front-end applications",
             "An API used only for file uploads"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of `mongoose` in a Node.js application?",
         options: [
-            "To provide a schema-based solution for MongoDB",
             "To create HTTP servers",
             "To compile TypeScript",
-            "To handle file uploads"
+            "To handle file uploads",
+            "To provide a schema-based solution for MongoDB",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does CRUD stand for in the context of databases?",
         options: [
-            "Create, Read, Update, Delete",
             "Connect, Route, Update, Delete",
             "Compile, Run, Update, Debug",
+            "Create, Read, Update, Delete",
             "Create, Route, Undo, Delete"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which method is used to add a new document to a MongoDB collection using Mongoose?",
         options: [
-            "save()",
             "insert()",
+            "save()",
             "add()",
             "append()"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of `body-parser` middleware in Express.js?",
         options: [
-            "To parse incoming request bodies",
             "To parse cookies",
             "To handle file uploads",
-            "To manage session data"
+            "To manage session data",
+            "To parse incoming request bodies",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does the `app.use()` method do in Express.js?",
@@ -192,12 +192,12 @@ export const questions = [
     {
         question: "What does the `crypto` module in Node.js provide?",
         options: [
-            "Cryptographic functionality",
             "File system operations",
+            "Cryptographic functionality",
             "Networking operations",
             "Database management"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which command is used to install a package globally in npm?",
@@ -212,22 +212,22 @@ export const questions = [
     {
         question: "What is a callback function in Node.js?",
         options: [
-            "A function passed as an argument to another function",
             "A function that calls another function",
             "A function that returns a promise",
+            "A function passed as an argument to another function",
             "A function used to parse JSON data"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does the `path` module in Node.js provide?",
         options: [
-            "Utilities for working with file and directory paths",
             "Utilities for making HTTP requests",
+            "Utilities for working with file and directory paths",
             "Utilities for managing databases",
             "Utilities for handling events"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which method is used to serve static files in an Express.js application?",
@@ -242,52 +242,52 @@ export const questions = [
     {
         question: "What is the purpose of the `dotenv` package in Node.js?",
         options: [
-            "To load environment variables from a .env file",
             "To handle HTTP requests",
             "To parse JSON data",
-            "To manage databases"
+            "To manage databases",
+            "To load environment variables from a .env file",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does the `cluster` module in Node.js allow you to do?",
         options: [
-            "Create child processes that share the same server port",
             "Handle file uploads",
+            "Create child processes that share the same server port",
             "Make HTTP requests",
             "Parse incoming request bodies"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which of the following is a popular testing framework for Node.js?",
         options: [
-            "Mocha",
             "Django",
             "Flask",
+            "Mocha",
             "Laravel"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does the `req.params` object contain in an Express.js route handler?",
         options: [
-            "Route parameters",
             "Query parameters",
             "Request headers",
+            "Route parameters",
             "Request body data"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of `cors` middleware in an Express.js application?",
         options: [
-            "To enable Cross-Origin Resource Sharing",
             "To handle file uploads",
+            "To enable Cross-Origin Resource Sharing",
             "To manage session data",
             "To parse incoming request bodies"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `event` module in Node.js?",
@@ -302,22 +302,22 @@ export const questions = [
     {
         question: "Which method is used to listen for incoming connections on a server in Node.js?",
         options: [
-            "server.listen()",
             "server.start()",
+            "server.listen()",
             "server.connect()",
             "server.bind()"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `querystring` module in Node.js?",
         options: [
-            "To parse and format URL query strings",
             "To make HTTP requests",
             "To manage databases",
-            "To handle file uploads"
+            "To handle file uploads",
+            "To parse and format URL query strings",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does the `res.json()` method do in an Express.js route handler?",
@@ -332,22 +332,22 @@ export const questions = [
     {
         question: "What does the `req.body` object contain in an Express.js route handler?",
         options: [
-            "Parsed request body data",
             "Route parameters",
             "Query parameters",
+            "Parsed request body data",
             "Request headers"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of the `helmet` middleware in an Express.js application?",
         options: [
-            "To improve security by setting HTTP headers",
             "To handle file uploads",
             "To manage session data",
+            "To improve security by setting HTTP headers",
             "To parse incoming request bodies"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of the `express-validator` middleware in an Express.js application?",
@@ -362,12 +362,12 @@ export const questions = [
     {
         question: "Which method is used to handle errors in an Express.js application?",
         options: [
-            "app.use() with a middleware function that takes four parameters",
             "app.error()",
+            "app.use() with a middleware function that takes four parameters",
             "app.errorHandler()",
             "app.catch()"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `bcrypt` package in a Node.js application?",
@@ -382,52 +382,52 @@ export const questions = [
     {
         question: "Which of the following is true about SQL databases?",
         options: [
-            "They use structured query language (SQL) for defining and manipulating data",
             "They are schemaless databases",
             "They are primarily used for JavaScript applications",
-            "They use NoSQL for defining and manipulating data"
+            "They use NoSQL for defining and manipulating data",
+            "They use structured query language (SQL) for defining and manipulating data",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which type of join returns all rows from both tables where there is a match in the join condition?",
         options: [
-            "INNER JOIN",
             "LEFT JOIN",
+            "INNER JOIN",
             "RIGHT JOIN",
             "FULL OUTER JOIN"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of indexing in databases?",
         options: [
-            "To improve the speed of data retrieval operations",
             "To create backup copies of data",
             "To encrypt sensitive data",
+            "To improve the speed of data retrieval operations",
             "To manage transactions"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which statement is used to add new data to a SQL database?",
         options: [
-            "INSERT INTO",
             "UPDATE",
             "CREATE TABLE",
-            "SELECT"
+            "SELECT",
+            "INSERT INTO",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What is the purpose of a foreign key in a SQL database?",
         options: [
-            "To establish a link between two tables",
             "To create primary key constraints",
             "To optimize query performance",
+            "To establish a link between two tables",
             "To encrypt data"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which statement is used to delete data from a SQL database?",
@@ -442,42 +442,42 @@ export const questions = [
     {
         question: "What does `ACID` stand for in the context of database transactions?",
         options: [
-            "Atomicity, Consistency, Isolation, Durability",
             "Authentication, Authorization, Accounting, Auditing",
+            "Atomicity, Consistency, Isolation, Durability",
             "Aggregate, Class, Interface, Database",
             "Access Control, Integrity, Deletion, Distribution"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which type of NoSQL database is optimized for hierarchical key-value pairs?",
         options: [
-            "Redis",
             "MongoDB",
             "Cassandra",
+            "Redis",
             "DynamoDB"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the primary advantage of using NoSQL databases?",
         options: [
-            "They are flexible and can handle unstructured data",
             "They are faster than SQL databases",
+            "They are flexible and can handle unstructured data",
             "They use structured query language (SQL) for defining and manipulating data",
             "They are suitable for complex transactions"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which of the following is a feature of Redis?",
         options: [
-            "In-memory data storage",
             "Schemaless data structure",
             "Document-based storage",
-            "Hierarchical key-value pairs"
+            "Hierarchical key-value pairs",
+            "In-memory data storage",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does `CAP theorem` state about distributed systems?",
@@ -502,92 +502,92 @@ export const questions = [
     {
         question: "Which command is used to build a Docker image from a Dockerfile?",
         options: [
-            "docker build",
             "docker create",
+            "docker build",
             "docker run",
             "docker pull"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is Kubernetes used for in container orchestration?",
         options: [
-            "To automate deployment, scaling, and management of containerized applications",
             "To create primary key constraints",
             "To optimize query performance",
+            "To automate deployment, scaling, and management of containerized applications",
             "To manage SQL databases"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does `CI/CD` stand for in software development?",
         options: [
-            "Continuous Integration/Continuous Delivery",
             "Code Inspection/Code Deployment",
+            "Continuous Integration/Continuous Delivery",
             "Continuous Inspection/Continuous Debugging",
             "Code Integration/Code Distribution"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which of the following is a popular CI/CD tool?",
         options: [
-            "Jenkins",
             "Ansible",
+            "Jenkins",
             "Puppet",
             "Chef"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of load balancing in web applications?",
         options: [
-            "To distribute incoming network traffic across multiple servers",
             "To handle file uploads",
             "To manage session data",
-            "To optimize query performance"
+            "To optimize query performance",
+            "To distribute incoming network traffic across multiple servers",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which HTTP status code indicates a successful response?",
         options: [
-            "200",
             "404",
             "500",
-            "302"
+            "302",
+            "200",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does `JWT` stand for in authentication?",
         options: [
-            "JSON Web Token",
             "JavaScript Web Token",
+            "JSON Web Token",
             "Java Web Token",
             "JSON Web Ticket"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which HTTP method is used to retrieve data from a server?",
         options: [
-            "GET",
             "POST",
+            "GET",
             "PUT",
             "DELETE"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of CORS in web development?",
         options: [
-            "To allow web servers to specify who can access their resources",
             "To handle file uploads",
             "To manage session data",
+            "To allow web servers to specify who can access their resources",
             "To optimize query performance"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of a CDN in web development?",
@@ -602,32 +602,32 @@ export const questions = [
     {
         question: "Which HTTP status code indicates that a resource has been permanently moved to a new location?",
         options: [
-            "301",
             "404",
             "200",
-            "302"
+            "302",
+            "301",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What is the purpose of a reverse proxy server?",
         options: [
-            "To handle incoming client requests and direct them to the appropriate backend server",
             "To manage session data",
             "To optimize query performance",
+            "To handle incoming client requests and direct them to the appropriate backend server",
             "To handle file uploads"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which of the following is a popular frontend framework?",
         options: [
-            "React",
             "Node.js",
+            "React",
             "Express",
             "Django"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of `npm install` in a Node.js project?",
@@ -642,12 +642,12 @@ export const questions = [
     {
         question: "Which of the following is true about RESTful APIs?",
         options: [
-            "They use HTTP methods to perform CRUD operations",
             "They are schemaless databases",
             "They use NoSQL for defining and manipulating data",
+            "They use HTTP methods to perform CRUD operations",
             "They are primarily used for JavaScript applications"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does `CRUD` stand for in the context of database operations?",
@@ -662,12 +662,12 @@ export const questions = [
     {
         question: "Which HTTP method is used to update data on a server?",
         options: [
-            "PUT",
             "GET",
             "POST",
-            "DELETE"
+            "DELETE",
+            "PUT",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What is the purpose of `async` and `await` in JavaScript?",
@@ -682,22 +682,22 @@ export const questions = [
     {
         question: "Which of the following is a JavaScript runtime built on Chrome's V8 JavaScript engine?",
         options: [
-            "Node.js",
             "React",
             "Angular",
+            "Node.js",
             "Vue.js"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of the `fetch` API in JavaScript?",
         options: [
-            "To make HTTP requests from the browser",
             "To optimize query performance",
             "To manage session data",
+            "To make HTTP requests from the browser",
             "To handle file uploads"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which statement is true about the `map()` method in JavaScript?",
@@ -712,12 +712,12 @@ export const questions = [
     {
         question: "What is the purpose of the `addEventListener()` method in JavaScript?",
         options: [
-            "To attach an event handler to a specified element",
             "To optimize query performance",
+            "To attach an event handler to a specified element",
             "To handle file uploads",
             "To manage session data"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which of the following is used to select elements by their CSS selector in JavaScript?",
@@ -732,82 +732,82 @@ export const questions = [
     {
         question: "What does `DOM` stand for in web development?",
         options: [
-            "Document Object Model",
             "Document Orientation Model",
             "Dynamic Object Model",
+            "Document Object Model",
             "Display Object Model"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which JavaScript method is used to convert a JSON string to a JavaScript object?",
         options: [
-            "JSON.parse()",
             "JSON.stringify()",
+            "JSON.parse()",
             "JSON.convert()",
             "JSON.toObject()"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `localStorage` object in JavaScript?",
         options: [
-            "To store key/value pairs locally in the browser",
             "To optimize query performance",
             "To handle file uploads",
-            "To manage session data"
+            "To manage session data",
+            "To store key/value pairs locally in the browser",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which of the following is true about arrow functions in JavaScript?",
         options: [
-            "They do not have their own `this` value",
             "They cannot have multiple parameters",
+            "They do not have their own `this` value",
             "They cannot return values",
             "They cannot be used as callbacks"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `bind()` method in JavaScript?",
         options: [
-            "To set the `this` value in a function and return a new function",
             "To optimize query performance",
             "To handle file uploads",
+            "To set the `this` value in a function and return a new function",
             "To manage session data"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which statement is true about closures in JavaScript?",
         options: [
-            "They allow functions to access variables from an outer function scope even after the outer function has finished executing",
             "They are limited to only arrow functions",
             "They are used to define classes and objects",
+            "They allow functions to access variables from an outer function scope even after the outer function has finished executing",
             "They are used to handle asynchronous operations"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does `AJAX` stand for in web development?",
         options: [
-            "Asynchronous JavaScript and XML",
             "Automated JavaScript and XML",
             "Asynchronous JSON and XML",
-            "Automated JSON and XML"
+            "Automated JSON and XML",
+            "Asynchronous JavaScript and XML",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which method is used to send an AJAX request in vanilla JavaScript?",
         options: [
-            "XMLHttpRequest.open()",
             "fetch()",
+            "XMLHttpRequest.open()",
             "getJSON()",
             "axios()"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of `async` and `await` in asynchronous JavaScript operations?",
@@ -822,42 +822,42 @@ export const questions = [
     {
         question: "Which statement is true about the `Promise` object in JavaScript?",
         options: [
-            "It represents the eventual completion or failure of an asynchronous operation and its resulting value",
             "It is used to define classes and objects",
+            "It represents the eventual completion or failure of an asynchronous operation and its resulting value",
             "It is used to manage session data",
             "It is used to optimize query performance"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `forEach()` method in JavaScript?",
         options: [
-            "To execute a provided function once for each array element",
             "To filter elements in an array based on a provided condition",
             "To sort the elements of an array in place",
-            "To reduce the elements of an array to a single value"
+            "To reduce the elements of an array to a single value",
+            "To execute a provided function once for each array element",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which method is used to remove the last element from an array in JavaScript?",
         options: [
-            "pop()",
             "push()",
             "shift()",
+            "pop()",
             "unshift()"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of the `splice()` method in JavaScript?",
         options: [
-            "To add or remove elements from an array",
             "To optimize query performance",
             "To handle file uploads",
-            "To manage session data"
+            "To manage session data",
+            "To add or remove elements from an array",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "Which statement is true about `map()` and `forEach()` methods in JavaScript?",
@@ -872,72 +872,72 @@ export const questions = [
     {
         question: "What is the purpose of the `sort()` method in JavaScript?",
         options: [
-            "To sort the elements of an array in place",
             "To optimize query performance",
+            "To sort the elements of an array in place",
             "To handle file uploads",
             "To manage session data"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which of the following is true about the `typeof` operator in JavaScript?",
         options: [
-            "It returns the data type of its operand",
             "It converts a string to uppercase",
             "It is used to declare variables",
-            "It is used to convert values to integers"
+            "It is used to convert values to integers",
+            "It returns the data type of its operand",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What is the purpose of the `isNaN()` function in JavaScript?",
         options: [
-            "To determine whether a value is NaN (Not-a-Number)",
             "To optimize query performance",
+            "To determine whether a value is NaN (Not-a-Number)",
             "To handle file uploads",
             "To manage session data"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "Which statement is true about `let`, `const`, and `var` in JavaScript?",
         options: [
-            "`let` and `const` are block-scoped, while `var` is function-scoped",
             "`let` and `var` are block-scoped, while `const` is function-scoped",
             "`let`, `const`, and `var` are function-scoped",
+            "`let` and `const` are block-scoped, while `var` is function-scoped",
             "`let`, `const`, and `var` are identical in functionality"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What does `ES6` stand for in JavaScript?",
         options: [
-            "ECMAScript 6",
             "ECMAScript 2016",
             "ECMAScript 2020",
+            "ECMAScript 6",
             "ECMAScript 2018"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which statement is true about arrow functions in JavaScript?",
         options: [
-            "They do not have their own `this` value",
             "They cannot have multiple parameters",
             "They cannot return values",
+            "They do not have their own `this` value",
             "They cannot be used as callbacks"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "Which of the following is used to handle errors in asynchronous JavaScript?",
         options: [
-            "try...catch",
             "if...else",
+            "try...catch",
             "for...of",
             "switch...case"
         ],
-        answer: 0
+        answer: 1
     },
     {
         question: "What is the purpose of the `toFixed()` method in JavaScript?",
@@ -952,31 +952,31 @@ export const questions = [
     {
         question: "Which statement is true about `setTimeout()` in JavaScript?",
         options: [
-            "It calls a function or evaluates an expression after a specified number of milliseconds",
             "It is used to optimize query performance",
             "It is used to handle file uploads",
-            "It is used to manage session data"
+            "It is used to manage session data",
+            "It calls a function or evaluates an expression after a specified number of milliseconds",
         ],
-        answer: 0
+        answer: 3
     },
     {
         question: "What does the `continue` statement do in JavaScript?",
         options: [
-            "It terminates the current iteration of a loop and continues with the next iteration",
             "It ends the execution of a loop",
             "It breaks the execution of a loop",
+            "It terminates the current iteration of a loop and continues with the next iteration",
             "It returns a value from a function"
         ],
-        answer: 0
+        answer: 2
     },
     {
         question: "What is the purpose of the `typeof` operator in JavaScript?",
         options: [
-            "It returns the data type of its operand",
             "It converts a string to uppercase",
+            "It returns the data type of its operand",
             "It is used to declare variables",
             "It is used to convert values to integers"
         ],
-        answer: 0
+        answer: 1
     },
 ];
